@@ -6,8 +6,19 @@ C++11 compiler
 I ran the program on mac
 
 
-How to run and compile:
+How to compile and run the sample program:
+> bash init.sh
 > make run
+
+How to run all programs:
+> bash execute_all_to_stdout.sh
+or 
+> bash execute_all_to_files.sh
+
+
+***** Note *****
+When there are invalid tokens or characters in the input file, the 'make' command will return an error. However, this is intentional and not a bug in the code.
+
 
 
 Different input files and what is their purpose of testing
