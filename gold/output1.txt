@@ -1,0 +1,85 @@
+<Keyword, "register_sequencial">
+<Colon, ":">
+<Keyword, "for">
+<Identifier, "i">
+<Operator, "=">
+<Number, "1">
+<Keyword, "to">
+<Number, "3">
+<Left Curly Brace, "{">
+<Keyword, "begin_generate">
+<Keyword, "set_seq_attr">
+<Identifier, "use_max_acc">
+<Identifier, "i">
+<Keyword, "set_seq_attr">
+<Identifier, "allow_flexible_operation">
+<Keyword, "true">
+<Keyword, "register_op">
+<Identifier, "Conv">
+<Left Parenthesis, "(">
+<Identifier, "kernel">
+<Colon, ":">
+<Left Parenthesis, "(">
+<Identifier, "n">
+<Comma, ",">
+<Identifier, "n">
+<Right Parenthesis, ")">
+<Comma, ",">
+<Identifier, "channels">
+<Colon, ":">
+<Left Parenthesis, "(">
+<Number, "1">
+<Comma, ",">
+<Number, "2">
+<Right Parenthesis, ")">
+<Right Parenthesis, ")">
+<Keyword, "register_op">
+<Identifier, "Conv">
+<Left Parenthesis, "(">
+<Identifier, "kernel">
+<Colon, ":">
+<Left Parenthesis, "(">
+<Number, "3">
+<Comma, ",">
+<Number, "3">
+<Right Parenthesis, ")">
+<Comma, ",">
+<Identifier, "channels">
+<Colon, ":">
+<Left Parenthesis, "(">
+<Number, "2">
+<Comma, ",">
+<Number, "4">
+<Right Parenthesis, ")">
+<Right Parenthesis, ")">
+<Keyword, "register_op">
+<Identifier, "FC">
+<Left Parenthesis, "(">
+<Identifier, "in">
+<Colon, ":">
+<Number, "1000">
+<Comma, ",">
+<Identifier, "out">
+<Colon, ":">
+<Number, "100">
+<Right Parenthesis, ")">
+<Keyword, "end_generate">
+<Keyword, "if">
+<Keyword, "generate_success">
+<Left Curly Brace, "{">
+<Keyword, "break">
+<Right Curly Brace, "}">
+<Right Curly Brace, "}">
+<Keyword, "report">
+<Quotation, """>
+<Identifier, "this">
+<Identifier, "is">
+<Identifier, "the">
+<Identifier, "final">
+<Identifier, "accelerator">
+<Identifier, "we">
+<Identifier, "used">
+<Left Curly Brace, "{">
+<Identifier, "i">
+<Right Curly Brace, "}">
+<Quotation, """>

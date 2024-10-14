@@ -1,0 +1,15 @@
+register_sequencial:  while i != 3 {
+	begin_generate
+        set_seq_attr use_acc i
+        register_op Conv (kernel: (n, n), channels: (1, 2)) 
+        register_op Conv (kernel: (3, 3), channels: (2, 4)) 
+        register_op FC (in:1000, out:100) 
+    end_generate
+
+    if generate_success {
+        break
+    } else {
+        i = i + 1
+    }
+} report "this is the final accelerator we used {i}"
+

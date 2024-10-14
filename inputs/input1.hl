@@ -1,0 +1,14 @@
+register_sequencial: for i = 1 to 3 {
+	begin_generate
+        set_seq_attr use_max_acc i
+        set_seq_attr allow_flexible_operation true 
+        register_op Conv (kernel: (n, n), channels: (1, 2)) 
+        register_op Conv (kernel: (3, 3), channels: (2, 4)) 
+        register_op FC (in:1000, out:100) 
+    end_generate
+
+    if generate_success {
+        break
+    }
+} report "this is the final accelerator we used {i}"
+

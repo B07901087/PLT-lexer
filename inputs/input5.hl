@@ -1,0 +1,12 @@
+report "simple program"
+set_soc_attr total_acc_num 1
+register_op Conv (kernel: (n, n), channels: (1, 2)) 
+register_op Conv (kernel: (n, n), channels: (3, 4))
+
+if generate_success {
+    return
+} else {
+    // this program will fail due to an excessive number of ops, but it's not the lexer's job to handle this
+    report "error"
+}
+
