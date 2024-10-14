@@ -38,3 +38,42 @@ How to test?
 The expected results are shown in gold/
 Note that the warning or error will still output on the screen even using "make file<num>" option.
 Note that the comment line (starting with "//") is filtered, that line won't be parsed as tokens
+
+
+
+
+
+================= tokens ====================
+Identifier: [a-z]([a-z]|[0-9])+
+
+Number: ([0-9])+
+
+Operator: "+", "-", "*", "/", "=", "==", "!=", ">=", "<=", ">", "<", "&&", "||"
+
+keyword: 
+"register_sequencial", 
+"for", 
+"to", 
+"begin_generate",
+"end_generate",
+"set_seq_attr",
+"register_op",
+"break",
+"report",
+"if", 
+"else", 
+"while", 
+"return", 
+"set_soc_attr",
+"generate_success",
+"true",
+"false"
+
+LeftParenthesis: "("
+RightParenthesis: ")"
+LeftCurlyBrace: "{"
+RightCurlyBrace: "}"
+Colon: ":"
+Quotation: """
+Comma: ","
+Unknown: invalid tokens
