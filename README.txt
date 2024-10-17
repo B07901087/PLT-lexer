@@ -10,6 +10,7 @@ How to compile and run the sample program:
 > bash init.sh
 > make run
 
+***** please use this script to test the program, and see the output in stdout or output/
 How to run all programs:
 > bash execute_all_to_stdout.sh
 or 
@@ -28,7 +29,7 @@ Different input files and what is their purpose of testing
 4. input4.hl: test error handling (invalid token: ++, 123a)
 5. input5.hl: simple program for generating hardware directly
 
-How to test?
+How to test each input program?
 1. make clean
 2. To test different input and view the result from the screen: (recommended)
     make in<num>
@@ -77,3 +78,8 @@ Colon: ":"
 Quotation: """
 Comma: ","
 Unknown: invalid tokens
+
+
+Error handling: skip the invalid character / token and continue
+
+Detailed FSM will be shown in the report.pdf
