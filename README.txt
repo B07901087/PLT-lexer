@@ -80,6 +80,6 @@ Comma: ","
 Unknown: invalid tokens
 
 
-Error handling: skip the invalid character / token and continue
+Error handling: skip the invalid character or token and continue
 
-Detailed FSM will be shown in the report.pdf
+Detailed FSM is shown in the report.pdf
